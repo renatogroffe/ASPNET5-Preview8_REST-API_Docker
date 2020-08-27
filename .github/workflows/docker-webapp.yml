@@ -28,6 +28,6 @@ jobs:
     - name: Build e Push no Docker Hub + Azure Container Registry
       run: |
         cd ./APIContagem
-        docker build . --file Dockerfile --tag tag ${{ env.IMAGEM_AZURE }}:latest
+        docker build . --file Dockerfile --tag ${{ env.IMAGEM_AZURE }}:latest
         docker tag ${{ env.IMAGEM_AZURE }}:latest ${{ env.IMAGEM_AZURE }}:$GITHUB_RUN_NUMBER
         docker push ${{ env.IMAGEM_AZURE }}
