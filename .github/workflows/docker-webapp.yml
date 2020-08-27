@@ -12,6 +12,7 @@ jobs:
     env:
       NOME_IMAGEM: apicontagem-preview8
       IMAGEM_AZURE: ${{ secrets.AZURE_CONTAINER_REGISTRY_SERVER }}/$NOME_IMAGEM
+      NOME_WEBAPP: groffecontador
 
     runs-on: ubuntu-latest
 
