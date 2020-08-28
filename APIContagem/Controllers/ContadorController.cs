@@ -33,7 +33,7 @@ namespace APIContagem.Controllers
                     _CONTADOR.Local,
                     _CONTADOR.Kernel,
                     _CONTADOR.TargetFramework,
-                    MensagemFixa = "Teste...",
+                    MensagemFixa = "Teste... Live no Microsoft Reactor",
                     MensagemVariavel = _configuration["MensagemVariavel"]
                 };
             }
